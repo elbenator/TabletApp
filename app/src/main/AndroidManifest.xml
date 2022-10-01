@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tabletapp">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_kiosk_terijaki"
+        android:label="Terijaki Kiosk App"
+        android:roundIcon="@mipmap/ic_kiosk_terijaki_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TabletApp">
+        <activity android:name=".item_selected_folder.MyOrder_edit_noodles"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".item_selected_folder.MyOrder_edit_Ricebowl"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".item_selected_folder.MyOrder_edit_milktea"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".item_selected_folder.item_selected_ad_ricebowl"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".item_selected_folder.item_selected_ad_noodles"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".item_selected_folder.item_selected_ad_milktea"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".PrintBluetooth" />
+        <activity
+            android:name=".item_selected_folder.MyOrder_edit"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MyOrder_page3"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MyOrder_page2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MyOrder_Page"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".item_selected_folder.item_selected"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MenupageRicebowl"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MenupageNoodles"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MenupageMilktea"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MenuPageAlacarte"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MenuPageCheesemilktea"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

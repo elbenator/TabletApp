@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="color_checkBox" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">#ed6f00</item>
+        <item name="android:textColorSecondary">#ACACAC</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="10dp"
+    tools:context=".item_selected_folder.MyOrder_edit_noodles">
+
+    <ScrollView
+        android:layout_width="275dp"
+        android:layout_height="match_parent"
+        android:background="#FFFBD7"
+        android:scrollbars="vertical"
+        android:scrollbarSize="5dp"
+        android:fadeScrollbars="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="ADD ONS"
+                android:textColor="#ed6f00"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <CheckBox
+                    android:id="@+id/addTapaCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Extra Beef Tapa \n ₱30.00"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:theme="@style/color_checkBox" />
+
+                <CheckBox
+                    android:id="@+id/addNoodCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Noodles Upsize \n ₱20.00"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="10dp"
+                    android:theme="@style/color_checkBox" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingVertical="30dp">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Additional Siomai\n Php 7.00"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/addSiomaiDown"
+                        android:layout_width="47dp"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="#ed6f00"
+                        android:text="▼"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                    <Button
+                        android:id="@+id/addSiomaiUp"
+                        android:layout_width="47dp"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="48dp"
+                        android:layout_marginRight="48dp"
+                        android:backgroundTint="#ed6f00"
+                        android:gravity="center"
+                        android:text="▲"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                    <TextView
+                        android:id="@+id/addSiomai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toStartOf="@+id/addSiomaiUp"
+                        app:layout_constraintStart_toEndOf="@+id/addSiomaiDown"
+                        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Additional Shanghai Rolls\n Php 7.00"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView22"
+                        app:layout_constraintTop_toBottomOf="@+id/addSiomai" />
+
+                    <Button
+                        android:id="@+id/addShanghaiDown"
+                        android:layout_width="47dp"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="#ed6f00"
+                        android:text="▼"
+                        app:layout_constraintStart_toStartOf="@+id/addSiomaiDown"
+                        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                    <Button
+                        android:id="@+id/addShanghaiUp"
+                        android:layout_width="47dp"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="#ed6f00"
+                        android:text="▲"
+                        app:layout_constraintEnd_toEndOf="@+id/addSiomaiUp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                    <TextView
+                        android:id="@+id/addShanghai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toStartOf="@+id/addShanghaiUp"
+                        app:layout_constraintStart_toEndOf="@+id/addShanghaiDown"
+                        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Additional Sharksfin\n Php 8.00"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toStartOf="@+id/textView22"
+                        app:layout_constraintTop_toBottomOf="@+id/addShanghai" />
+
+                    <Button
+                        android:id="@+id/addSharkDown"
+                        android:layout_width="47dp"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="#ed6f00"
+                        android:text="▼"
+                        app:layout_constraintStart_toStartOf="@+id/addShanghaiDown"
+                        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                    <Button
+                        android:id="@+id/addSharkUp"
+                        android:layout_width="47dp"
+                        android:layout_height="38dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="#ed6f00"
+                        android:text="▲"
+                        app:layout_constraintEnd_toEndOf="@+id/addShanghaiUp"
+                        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                    <TextView
+                        android:id="@+id/addShark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        app:layout_constraintEnd_toStartOf="@+id/addSharkUp"
+                        app:layout_constraintStart_toEndOf="@+id/addSharkDown"
+                        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="639dp"
+            android:layout_height="571dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.466">
+            <TextView
+                android:id="@+id/textViewCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/itemNameED"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/itemNameED"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:gravity="center"
+                android:text="Item Name"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="30dp" />
+
+            <TextView
+                android:id="@+id/descriptionED"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="item desctiption put in here"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                tools:layout_editor_absoluteX="30dp" />
+
+            <TextView
+                android:id="@+id/priceED"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="1000"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.37"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionED" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/itemNameED"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#FFFBF4"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/priceED">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <Button
+                        android:id="@+id/plusED"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#ed6f00"
+                        android:text="+"
+                        android:textSize="25sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.907"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/minusED"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:backgroundTint="#FDB473"
+                        android:text="-"
+                        android:textSize="25sp"
+                        app:layout_constraintHorizontal_bias="0.202"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginLeft="25dp" />
+
+                    <TextView
+                        android:id="@+id/numberED"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="30dp"
+                        app:layout_constraintEnd_toStartOf="@+id/plusED"
+                        app:layout_constraintHorizontal_bias="0.525"
+                        app:layout_constraintStart_toEndOf="@+id/minusED"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/backED"
+                android:layout_width="470dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="74dp"
+                android:layout_marginLeft="74dp"
+                android:layout_marginEnd="95dp"
+                android:layout_marginRight="95dp"
+                android:backgroundTint="@color/white"
+                android:text="Cancel"
+                android:textColor="#EC8C07"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/deleteMY"
+                app:strokeColor="#ed6f00"
+                app:strokeWidth="2dp" />
+
+            <Button
+                android:id="@+id/saveED"
+                android:layout_width="470dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FA650F"
+                android:text="save changes"
+                android:layout_marginTop="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.437"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+            <Button
+                android:id="@+id/deleteMY"
+                android:layout_width="470dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#F31F1F"
+                android:text="Remove"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.437"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/saveED" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="224dp"
+                android:layout_marginLeft="224dp"
+                android:layout_marginTop="8dp"
+                android:text="Php "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/descriptionED" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
